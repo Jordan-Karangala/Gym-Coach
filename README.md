@@ -11,77 +11,77 @@
 </p>
 ---
 
-## 🚀 Overview
+<hr>
 
-A real-time computer vision system that:
+<h2 align="center">🚀 Overview</h2>
 
-- Detects exercise form  
-- Counts repetitions  
-- Evaluates movement quality  
-- Generates AI-powered coaching feedback  
+<p align="center">
+A real-time computer vision system that detects exercise form,
+counts repetitions, evaluates movement quality,
+and generates AI-powered coaching feedback.
+</p>
 
-Built using pose estimation, configurable biomechanics logic, and LLM-powered feedback.
+<p align="center">
+Built using pose estimation, configurable biomechanics logic,
+and LLM-powered feedback.
+</p>
 
-🚀 Features
-🎥 Real-Time Pose Detection
+<hr>
 
-YOLO-based pose estimation
+<h2 align="center">🚀 Features</h2>
 
-Configurable for multiple exercises
+<h3>🎥 Real-Time Pose Detection</h3>
+<ul>
+  <li>YOLO-based pose estimation</li>
+  <li>Configurable for multiple exercises</li>
+  <li>Active side detection (left/right locking)</li>
+</ul>
 
-Active side detection (left/right locking)
+<h3>📐 Biomechanics Engine</h3>
+<ul>
+  <li>Joint angle calculation (elbow, knee, hip, shoulder)</li>
+  <li>Config-driven angle definitions</li>
+  <li>Dynamic state machine (flexed → extended)</li>
+  <li>Rep start and rep completion detection</li>
+</ul>
 
-📐 Biomechanics Engine
+<h3>🔁 Rep Counting Logic</h3>
+<ul>
+  <li>Angle range validation</li>
+  <li>Minimum range requirement</li>
+  <li>Speed classification (fast / good / slow)</li>
+  <li>Movement state tracking per frame</li>
+</ul>
 
-Joint angle calculation (elbow, knee, hip, shoulder)
+<h3>🧠 AI Coaching Feedback</h3>
+<ul>
+  <li>LLM integration (OpenAI / Gemini)</li>
+  <li>Context-aware feedback per rep</li>
+  <li>Fallback to local feedback system</li>
+  <li>Rolling feedback support</li>
+</ul>
 
-Config-driven angle definitions
+<h3>📊 Workout Logging</h3>
+<ul>
+  <li>CSV logging per session</li>
+  <li>Rep duration tracking</li>
+  <li>Min/max angle tracking</li>
+  <li>Speed performance recording</li>
+</ul>
 
-Dynamic state machine (flexed → extended)
+<h3>📈 Analytics-Ready Architecture</h3>
+<ul>
+  <li>Session summary support</li>
+  <li>Progress tracking</li>
+  <li>Average rep speed</li>
+  <li>Total reps per session</li>
+</ul>
 
-Rep start and rep completion detection
+<hr>
 
-🔁 Rep Counting Logic
+<h2 align="center">🏗 Architecture Overview</h2>
 
-Angle range validation
-
-Minimum range requirement
-
-Speed classification (fast / good / slow)
-
-Movement state tracking per frame
-
-🧠 AI Coaching Feedback
-
-LLM integration (OpenAI / Gemini)
-
-Context-aware feedback per rep
-
-Fallback to local feedback system
-
-Rolling feedback support
-
-📊 Workout Logging
-
-CSV logging per session
-
-Rep duration tracking
-
-Min/max angle tracking
-
-Speed performance recording
-
-📈 Analytics-Ready Architecture
-
-Session summary support
-
-Progress tracking
-
-Average rep speed
-
-Total reps per session
-
-🏗 Architecture Overview
+<pre>
 Video Frame
     ↓
 Pose Detection (YOLO)
@@ -99,116 +99,109 @@ Feedback Engine (LLM + Local fallback)
 Visualizer (Skeleton + Progress + Stats)
     ↓
 Workout Logger
-🧠 State Machine Logic
+</pre>
 
-Each rep follows:
+<hr>
 
-Extended → Flexed → Extended
+<h2 align="center">🧠 State Machine Logic</h2>
 
-Conditions for valid rep:
+<p align="center"><b>Extended → Flexed → Extended</b></p>
 
-Minimum angle range achieved
+<p><b>Conditions for valid rep:</b></p>
+<ul>
+  <li>Minimum angle range achieved</li>
+  <li>Required flexed threshold reached</li>
+  <li>Required extended threshold reached</li>
+  <li>Speed classified within thresholds</li>
+</ul>
 
-Required flexed threshold reached
+<hr>
 
-Required extended threshold reached
+<h2 align="center">⚙️ Config-Driven Design</h2>
 
-Speed classified within thresholds
+<p>Each exercise defines:</p>
 
-⚙️ Config-Driven Design
-
-Each exercise defines:
-
+<pre>
 "angle_definition": {
-    "left": ["jointA", "jointB", "jointC"],
-    "right": ["jointA", "jointB", "jointC"]
+  "left": ["jointA", "jointB", "jointC"],
+  "right": ["jointA", "jointB", "jointC"]
 },
 
 "angle_thresholds": {
-    "extended": 165,
-    "flexed": 80,
-    "min_range": 70
+  "extended": 165,
+  "flexed": 80,
+  "min_range": 70
 },
 
 "speed_thresholds": {
-    "fast": 0.8,
-    "slow": 3.0
+  "fast": 0.8,
+  "slow": 3.0
 }
+</pre>
 
-This allows:
+<p><b>This allows:</b></p>
+<ul>
+  <li>Adding new exercises without modifying logic</li>
+  <li>Switching angle types dynamically</li>
+  <li>Customizing per-exercise biomechanics</li>
+</ul>
 
-Adding new exercises without modifying logic
+<hr>
 
-Switching angle types dynamically
+<h2 align="center">🧪 Supported Exercises</h2>
 
-Customizing per-exercise biomechanics
+<div align="center">
 
-🧪 Supported Exercises
+Push-up • Bicep Curl • Tricep Extension • Shoulder Press • Lateral Raise •  
+Front Raise • Bent-over Row • Pull-up • Squat • Lunge •  
+Leg Extension • Leg Curl • Calf Raise • Deadlift • Sit-up • Crunch  
 
-Push-up
+</div>
 
-Bicep Curl
+<hr>
 
-Tricep Extension
+<h2 align="center">🧠 LLM Integration</h2>
 
-Shoulder Press
-
-Lateral Raise
-
-Front Raise
-
-Bent-over Row
-
-Pull-up
-
-Squat
-
-Lunge
-
-Leg Extension
-
-Leg Curl
-
-Calf Raise
-
-Deadlift
-
-Sit-up
-
-Crunch
-
-🧠 LLM Integration
-
-Optional AI coaching per rep using:
-
-OpenAI API
-
-Google Gemini API
-
+<p align="center">
+Optional AI coaching per rep using OpenAI API or Google Gemini API.
 If API fails → automatic fallback to local rule-based feedback.
+</p>
 
-Environment variable setup:
+<h4>Environment Variables</h4>
 
+<pre>
 OPENAI_API_KEY=your_key_here
 GEMINI_API_KEY=your_key_here
-📦 Installation
+</pre>
+
+<hr>
+
+<h2 align="center">📦 Installation</h2>
+
+<pre>
 pip install -r requirements.txt
-
-Run:
-
 python main.py
-🏁 Future Improvements
+</pre>
 
-MediaPipe mobile-ready mode
+<hr>
 
-Real-time dashboard UI
+<h2 align="center">🏁 Future Improvements</h2>
 
-Multi-person tracking
+<ul>
+  <li>MediaPipe mobile-ready mode</li>
+  <li>Real-time dashboard UI</li>
+  <li>Multi-person tracking</li>
+  <li>Workout history analytics</li>
+  <li>Voice coaching</li>
+</ul>
 
-Workout history analytics
+<hr>
 
-Voice coaching
+<h2 align="center">👨‍💻 Author</h2>
 
-👨‍💻 Author
+<p align="center">
+Machine Learning Engineer specializing in real-time computer vision systems
+and applied AI for biomechanics.
+</p>
 
-Machine Learning Engineer specializing in real-time computer vision systems and applied AI for biomechanics.
+<hr>
