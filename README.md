@@ -1,16 +1,33 @@
-🏋️ AI Gym Coach — Real-Time Exercise Form Analyzer
-
+<h1 align="center">🏋️ AI Gym Coach — Real-Time Exercise Form Analyzer</h1>
 
 <p align="center">
-  <img src="![squat sample](https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb)" width="100%">
+  <img src="https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb" width="800">
 </p>
 
+<p align="center">
+  <em>Squat Form Detection — Angle Tracking & Rep Counting</em>
+</p>
 
-![pushup sample](https://github.com/user-attachments/assets/5b3f0b95-9864-41ad-9dfc-f8c400412855)
+<br>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5b3f0b95-9864-41ad-9dfc-f8c400412855" width="800">
+</p>
 
+<p align="center">
+  <em>Push-up Analysis — Real-time Pose Correction</em>
+</p>
 
-A real-time computer vision system that detects exercise form, counts reps, evaluates movement quality, and provides AI-generated coaching feedback.
+---
+
+## 🚀 Overview
+
+A real-time computer vision system that:
+
+- Detects exercise form  
+- Counts repetitions  
+- Evaluates movement quality  
+- Generates AI-powered coaching feedback  
 
 Built using pose estimation, configurable biomechanics logic, and LLM-powered feedback.
 
