@@ -1,7 +1,7 @@
 <h1 align="center">🏋️ AI Gym Coach — Real-Time Exercise Form Analyzer</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb" width="800">
+  <img src="https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb" width="600">
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5b3f0b95-9864-41ad-9dfc-f8c400412855" width="800">
+  <img src="https://github.com/user-attachments/assets/5b3f0b95-9864-41ad-9dfc-f8c400412855" width="600">
 </p>
 
 <p align="center">
