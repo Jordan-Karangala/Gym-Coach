@@ -1,7 +1,10 @@
 🏋️ AI Gym Coach — Real-Time Exercise Form Analyzer
 
 
-![squat sample](https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb)
+<p align="center">
+  <img src="![squat sample](https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb)" width="100%">
+</p>
+
 
 ![pushup sample](https://github.com/user-attachments/assets/5b3f0b95-9864-41ad-9dfc-f8c400412855)
 
