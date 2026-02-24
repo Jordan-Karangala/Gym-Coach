@@ -1,5 +1,9 @@
 🏋️ AI Gym Coach — Real-Time Exercise Form Analyzer
 
+![Pushup](sample gifs/pushup sample.gif)  ![Squat(sample gifs/squat sample.gif)
+
+
+
 A real-time computer vision system that detects exercise form, counts reps, evaluates movement quality, and provides AI-generated coaching feedback.
 
 Built using pose estimation, configurable biomechanics logic, and LLM-powered feedback.
