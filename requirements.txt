@@ -1,0 +1,16 @@
+# Computer Vision & Image Processing
+ultralytics
+opencv-python
+numpy
+
+# AI & LLM (2026 Standards)
+google-genai
+langchain
+langchain-chroma
+langchain-huggingface
+langchain-text-splitters
+sentence-transformers
+
+# Environment & Utilities
+python-dotenv
+httpx
