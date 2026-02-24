@@ -1,23 +1,14 @@
 <h1 align="center">🏋️ AI Gym Coach — Real-Time Exercise Form Analyzer</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb" width="600">
+  <img src="https://github.com/user-attachments/assets/e285588f-2374-478b-b873-8c787e9afacb" width="45%">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/5b3f0b95-9864-41ad-9dfc-f8c400412855" width="45%">
 </p>
 
 <p align="center">
-  <em>Squat Form Detection — Angle Tracking & Rep Counting</em>
+  <em>Real-time Squat & Push-up Form Analysis</em>
 </p>
-
-<br>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5b3f0b95-9864-41ad-9dfc-f8c400412855" width="600">
-</p>
-
-<p align="center">
-  <em>Push-up Analysis — Real-time Pose Correction</em>
-</p>
-
 ---
 
 ## 🚀 Overview
